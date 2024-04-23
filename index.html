@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CatBots</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.png" type="imagex/icon" >
 </head>
 
 <header id="inicio" class="cabecalho">
     <img class="logo" src="logo.png">   
-    <h1 class="titulo">CatBots</h1>
+    <h1  class="titulo">CatBots</h1>
     <span></span>
 </header>
+
 
 <body>
 
@@ -20,18 +21,24 @@
         function scrollParaSeccao(id) {
             var secao = document.getElementById(id);
             secao.scrollIntoView({ behavior: 'smooth' }); // Rolagem suave
-            
         }
-    </script>
+    document.getElementById("quemsomos").addEventListener("mousedown", function() {
+        this.style.backgroundColor = "#423d3d";
+    });
+    document.getElementById("quemsomos").addEventListener("mouseover", function() {
+        this.style.backgroundColor = "";
+    });
 
+        
+    </script>
     <div class="links_fixo">
         <span></span>
         <nav class="links">
-            <a onclick="scrollParaSeccao('inicio')" ><img src="https://cdn-icons-png.flaticon.com/128/8794/8794943.png"  width="28px"></a>
-            <a onclick="scrollParaSeccao('projetos')" ><img src="https://cdn-icons-png.flaticon.com/128/5353/5353213.png"  width="28px"></a>
-            <a onclick="scrollParaSeccao('quemsomos')" ><img src="https://cdn-icons-png.flaticon.com/128/681/681494.png"  width="28px"></a>
-            <a onclick="scrollParaSeccao('localização')" ><img src="https://cdn-icons-png.flaticon.com/128/5837/5837790.png"  width="28px"></a>
-            <a onclick="scrollParaSeccao('contato')" ><img src="https://cdn-icons-png.flaticon.com/128/733/733443.png"  width="28px"></a>
+            <a onclick="scrollParaSeccao('inicio')"><img src="https://cdn-icons-png.flaticon.com/128/8794/8794943.png"  width="28px"></a>
+            <a onclick="scrollParaSeccao('projetos')"><img src="https://cdn-icons-png.flaticon.com/128/5353/5353213.png"  width="28px"></a>
+            <a onclick="scrollParaSeccao('quemsomos')"><img src="https://cdn-icons-png.flaticon.com/128/681/681494.png"  width="28px"></a>
+            <a onclick="scrollParaSeccao('localização')"><img src="https://cdn-icons-png.flaticon.com/128/5837/5837790.png"  width="28px"></a>
+            <a onclick="scrollParaSeccao('contato')"><img src="https://cdn-icons-png.flaticon.com/128/733/733443.png"  width="28px"></a>
         </nav>
     </div>
     <section class="apresentacao_section">
@@ -48,52 +55,77 @@
     <section id="projetos" class="projetos">
         <h1 class="titulo_projetos">Projetos</h1>
         <div class="itens_projeto">
-            <div class="itens">
+            <div id="video" class="itens">
                 <h2 class="nome_projeto">Projeto 1</h2>
-                <img class="itens_foto" src="https://img.freepik.com/vetores-premium/tela-de-carregamento-em-estilo-pixel-art_475147-2645.jpg">
-                
+                <video class="itens_foto1"  width="640" height="360" controls>
+                    <source src="projeto 1.mp4" type="video/mp4">
+                  </video>
             </div>
-
-            <div class="itens">
-                <h2 class="nome_projeto">Projeto 2</h2>
-                <img class="itens_foto" src="https://img.freepik.com/vetores-premium/tela-de-carregamento-em-estilo-pixel-art_475147-2645.jpg"><!-- aqui cole o link da foto do projetos-->
-                
+            <div id="video" class="itens">
+                <h2 class="nome_projeto">Projeto 2  </h2>
+                <video class="itens_foto2"  width="640" height="360" controls>
+                    <source src="projeto 2.mp4" type="video/mp4">
+                  </video>
             </div>
-            <div class="itens">
-                <h2 class="nome_projeto">Projeto 3</h2>
-                <img class="itens_foto" src="https://img.freepik.com/vetores-premium/tela-de-carregamento-em-estilo-pixel-art_475147-2645.jpg"><!-- aqui cole o link da foto do projetos-->
-                
+            
+            <div id="video" class="itens">
+                <h2 class="nome_projeto">Projeto 3  </h2>
+                <video class="itens_foto1"  width="640" height="360" controls>
+                    <source src="projeto 3.mp4" type="video/mp4">
+                  </video>
             </div>
-            <div class="itens">
+        
+            
+            <div id="video" class="itens">
                 <h2 class="nome_projeto">Projeto 4</h2>
-                <img class="itens_foto" src="https://img.freepik.com/vetores-premium/tela-de-carregamento-em-estilo-pixel-art_475147-2645.jpg"><!-- aqui cole o link da foto do projetos-->
-                
+                <video class="itens_foto2"  width="640" height="360" controls>
+                    <source src="projeto 4.mp4" type="video/mp4">
+                  </video>
             </div>
         </div>
         <div class="itens_projeto">
-            <div class="itens">
-                <h2 class="nome_projeto">Projeto 5</h2>
-                <img class="itens_foto" src="https://img.freepik.com/vetores-premium/tela-de-carregamento-em-estilo-pixel-art_475147-2645.jpg"><!-- aqui cole o link da foto do projetos-->
-                
+            <div id="video" class="itens">
+                <h2 class="nome_projeto">Projeto 5  </h2>
+                <video class="itens_foto1"  width="640" height="360" controls>
+                    <source src="projeto 5.mp4" type="video/mp4">
+                  </video>
             </div>
-
-            <div class="itens">
-                <h2 class="nome_projeto">Projeto 6</h2>
-                <img class="itens_foto" src="https://img.freepik.com/vetores-premium/tela-de-carregamento-em-estilo-pixel-art_475147-2645.jpg"><!-- aqui cole o link da foto do projetos-->
-                
+            
+            <div id="video" class="itens">
+                <h2 class="nome_projeto">Projeto 6  </h2>
+                <video class="itens_foto2"  width="640" height="360" controls>
+                    <source src="carregamnto sem o video.mp4" type="video/mp4">
+                  </video>
             </div>
-            <div class="itens">
+        
+            <div id="video" class="itens bottom">
                 <h2 class="nome_projeto">Projeto 7</h2>
-                <img class="itens_foto" src="https://img.freepik.com/vetores-premium/tela-de-carregamento-em-estilo-pixel-art_475147-2645.jpg"><!-- aqui cole o link da foto do projetos-->
-                
+                <video class="itens_foto1"  width="640" height="360" controls>
+                    <source src="carregamnto sem o video.mp4" type="video/mp4">
+                  </video>
             </div>
-            <div class="itens">
+            <div id="video" class="itens bottom">
                 <h2 class="nome_projeto">Projeto 8  </h2>
-                <img class="itens_foto" src="https://img.freepik.com/vetores-premium/tela-de-carregamento-em-estilo-pixel-art_475147-2645.jpg"><!-- aqui cole o link da foto do projetos-->
-                
+                <video class="itens_foto2"  width="640" height="360" controls>
+                    <source src="carregamnto sem o video.mp4" type="video/mp4">
+                  </video>
             </div>
         </div>
-        
+        <div class="itens_projeto">
+            <div id="video" class="itens bottom">
+                <h2 class="nome_projeto">Projeto 9  </h2>
+                <video class="itens_foto1"  width="640" height="360" controls>
+                    <source src="carregamnto sem o video.mp4" type="video/mp4">
+                  </video>
+            </div>
+            
+            <div id="video" class="itens bottom">
+                <h2 class="nome_projeto">Projeto 10  </h2>
+                <video class="itens_foto2"  width="640" height="360" controls>
+                    <source src="carregamnto sem o video.mp4" type="video/mp4">
+                  </video>
+            </div>
+        </div>
     </section>
 
     <section id="quemsomos" class="quem_somos">
@@ -113,18 +145,16 @@
             <h1 class="titulo_projetos">grupo</h1>
             <div class="grupo">
                 <div class="pessoas">
-                    <img class="integrantes" src="https://img.freepik.com/vetores-premium/tela-de-carregamento-em-estilo-pixel-art_475147-2645.jpg" >
-                    <h2 class="nome_integrantes">Joyce</h2>
-                </div>
-                <span></span>
-                <div class="pessoas">
-                    <img class="integrantes" src="https://img.freepik.com/vetores-premium/tela-de-carregamento-em-estilo-pixel-art_475147-2645.jpg">
+                    <img class="integrantes" src="1.jpg" width="124% " >
                     <h2 class="nome_integrantes">Fernada</h2>
                 </div>
-                <span></span>
                 <div class="pessoas">
-                    <img class="integrantes" src="https://img.freepik.com/vetores-premium/tela-de-carregamento-em-estilo-pixel-art_475147-2645.jpg">
+                    <img class="integrantes" src="2.jpg" width="124% ">
                     <h2 class="nome_integrantes">Greice</h2>
+                </div>
+                <div class="pessoas">
+                    <img class="integrantes" src="3.jpg" width="124% ">
+                    <h2 class="nome_integrantes">Joyce</h2>
                 </div>
             </div>
         </div>
@@ -139,46 +169,38 @@
     </section>
     <section id="contato">
         <div class="container">
-            <h1 class="titulo_projetos"> Contato</h1>
-            <ul class="lista-contatos">
-                <li class="item-contato">
-                    <span class="tipo-contato">Telefone:</span>
-                    <span class="info-contato">+55 1234-5678</span>
-                </li>
-                <li class="item-contato">
-                    <span class="tipo-contato">Email:</span>
-                    <span class="info-contato">exemplo@email.com</span>
-                </li>
-                <li class="item-contato">
-                    <span class="tipo-contato">GitHub:</span>
-                    <a href="https://github.com/exemplo" class="link-github info-contato">github.com/exemplo</a>
-                </li>
-                <li class="item-contato">
-                    <span class="tipo-contato">Telefone:</span>
-                    <span class="info-contato">+55 9876-5432</span>
-                </li>
-                <li class="item-contato">
-                    <span class="tipo-contato">Email:</span>
-                    <span class="info-contato">contato@email.com</span>
-                </li>
-                <li class="item-contato">
-                    <span class="tipo-contato">GitHub:</span>
-                    <a href="https://github.com/contato" class="link-github info-contato">github.com/contato</a>
-                </li>
-                <li class="item-contato">
-                    <span class="tipo-contato">Telefone:</span>
-                    <span class="info-contato">+55 5555-5555</span>
-                </li>
-                <li class="item-contato">
-                    <span class="tipo-contato">Email:</span>
-                    <span class="info-contato">suporte@email.com</span>
-                </li>
-                <li class="item-contato">
-                    <span class="tipo-contato">GitHub:</span>
-                    <a href="https://github.com/suporte" class="link-github info-contato">github.com/suporte</a>
-                </li>
-            </ul>
-        </div>
+                <h1 class="titulo_projetos"> Contato</h1>
+                <ul class="lista-contatos">
+                    
+                    <li class="item-contato">
+                        <span class="tipo-contato">Email:</span>
+                        <span class="info-contato">Joyce@email.com</span>
+                    </li>
+                    
+                    <li class="item-contato">
+                        <span class="tipo-contato">Email:</span>
+                        <span class="info-contato">Fernada@email.com</span>
+                    </li>
+                    <li class="item-contato">
+                        <span class="tipo-contato">Email:</span>
+                        <span class="info-contato">Greice@email.com</span>
+                    </li>
+                    <li class="item-contato">
+                        <span class="tipo-contato">GitHub:</span>
+                        <a href="https://github.com/exemplo" class="link-github info-contato">github.com/joyce</a>
+                    </li>
+                    
+                    <li class="item-contato">
+                        <span class="tipo-contato">GitHub:</span>
+                        <a href="https://github.com/contato" class="link-github info-contato">github.com/fernanda</a>
+                    </li>
+                    
+                    <li class="item-contato">
+                        <span class="tipo-contato">GitHub:</span>
+                        <a href="https://github.com/suporte" class="link-github info-contato">github.com/greice</a>
+                    </li>
+                </ul>
+            </div>
     
     
     </section>
