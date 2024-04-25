@@ -20,6 +20,7 @@ body {
     align-items: center;
     justify-self: center;
     text-align: center;
+    flex-direction: column-reverse;
     grid-template-columns: 20% 50% 20%;
     margin-bottom: 3%;
     border-bottom: 2px solid var(--section-conteudo);
@@ -32,8 +33,9 @@ body {
     align-items: center;
     justify-self: center;
     text-align: center;
-    grid-template-columns: 18% 50% 10%;
+    grid-template-columns: 23% 50% 10%;
     margin-bottom: 3%;
+    gap: 6%;
     border-bottom: 2px solid var(--section-conteudo);
 }
 }
@@ -51,7 +53,7 @@ body {
 }
 
 .titulo {
-    font-size: 3em;
+    font-size: 4em;
     line-height: 1.5;
     max-width: 800px;
     padding: 0 20px;
@@ -60,7 +62,7 @@ body {
 
 @media screen and (max-width: 767px) {
     .titulo {
-        margin-left: -14%;
+        
         font-size: 50px;
         line-height: 1.3;
     }
@@ -88,7 +90,7 @@ body {
 
 @media only screen and (max-width: 767px) {
     .apresentacao {
-        grid-template-columns: 10% 70% 25% 10%;
+        grid-template-columns: 10% 86% 40% 10%;
         gap: 10px;
     }
 
@@ -152,6 +154,7 @@ section b {
 }
 
 .links {
+    z-index: 10;
     cursor:pointer ;
     top: 1%;
     display: flex;
@@ -204,12 +207,48 @@ section b {
 }
 
 .itens_projeto {
-    display: flex;
+    display: grid;
     margin: auto;
-    grid-template-columns: 50% 50%;
+    flex-direction: column;
+    grid-template-columns: 30% 30%  30%;
     justify-content: center;
+    gap:1%;
     justify-self: center;
     align-items: center;
+}
+@media screen and (max-width: 767px) {
+    .itens_projeto {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 60%;
+        text-align: center;
+    }
+    .projetos{
+        text-align: center;
+    }
+    .itens_foto, .itens_foto1, .itens_foto2{
+        width:200px;
+        height:400px;
+    }
+    .titulo_projetos{
+        padding-left: -110px;
+        margin-bottom: 6%;
+    }
+    .nome_projeto{
+        margin-top: 4%;
+        margin-bottom:1% ;
+    }
+}
+
+.itens {
+    flex-grow: 1;
+    flex-basis: 200;
+    display: block;
+    margin-top: 2%;
+    z-index: 1;
+}
+.itens:hover{
+    z-index: 9;
 }
 
 .itens {
@@ -217,30 +256,28 @@ section b {
     flex-basis: 200;
     display: block;
     margin-top: 5%;
+   
 }
 
 .nome_projeto {
-    margin-top: -1%;
     margin-bottom: 2%;
     color: rgb(255, 255, 255);
 }
-
 .itens_foto, .itens_foto1, .itens_foto2 {
+    transition: all 0.4s ease-in-out;
+    background-color: rgb(41, 39, 39);
+    border: 1%;
+    border: solid #fff;
     border-radius: 10px;
-    border: 2px solid rgb(255, 255, 255);
-    width: 70%;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.bottom{
+    display: block;
     margin-bottom: 5%;
-}
-
-
-.itens_foto:hover {
-    transform: translateY(-50px) scale(1.5);
-}
-.itens_foto1:hover {
-    transform: translate(50px, -50px) scale(1.5);
-}
-.itens_foto2:hover {
-    transform: translate(-50px, -50px) scale(1.5);
 }
 
 .quem_somos {
@@ -306,27 +343,36 @@ section b {
 
 .grupo {
     display: grid;
-    grid-template-columns: 25vh 3% 25vh 3% 25vh;
+    grid-template-columns: 20vh 20vh 20vh;
     align-items: center;
+    flex-direction: column;
+    gap: 34px;
     justify-content: center;
 }
 @media only screen and (max-width: 1000px) {
     .grupo{
-        grid-template-columns: 15vh 3% 15vh 3% 15vh;
+        grid-template-columns: 15vh 15vh 15vh;
         flex-wrap: wrap;
+        gap: 26px;
     }
     .equipe {
         margin: 0 10%;
-        
     }
 }
 
 .integrantes {
     margin: 5%;
-    width: 100%;
-    border-radius: 50%;
+    border-radius: 2%;
     margin-top: 3%;
     border: 1px solid #fff;
+}
+.pessoas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .nome_integrantes {
@@ -415,4 +461,8 @@ section b {
 }
 .click{
     width: 100%;
+}
+
+.teste{
+    width: 10%;
 }
