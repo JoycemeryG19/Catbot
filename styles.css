@@ -87,6 +87,23 @@ body {
     grid-template-columns: 30% 50% 25% 30%;
     gap: 10px;
 }
+@media only screen and (max-width: 1500px) {
+    .apresentacao {
+        grid-template-columns: 30% 50% 25% 30%;;
+        gap: 10px;
+    }
+    .titulo_apresentacao {
+        font-size: 30px;
+        font-family: cursive;
+    }
+
+    .apresentacao_section {
+        height: auto;
+    }
+    .caixa_apresentacao{
+        font-size: 20px;
+    }
+}
 
 @media only screen and (max-width: 767px) {
     .apresentacao {
@@ -267,6 +284,7 @@ section b {
     transition: all 0.4s ease-in-out;
     background-color: rgb(41, 39, 39);
     border: 1%;
+    filter: brightness(120%);
     border: solid #fff;
     border-radius: 10px;
     width: 100%;
@@ -346,22 +364,37 @@ section b {
     grid-template-columns: 20vh 20vh 20vh;
     align-items: center;
     flex-direction: column;
-    gap: 34px;
+    gap: 14px;
     justify-content: center;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 767px) {
     .grupo{
-        grid-template-columns: 15vh 15vh 15vh;
+        display: grid;
+        grid-template-columns: 20vh 20vh 20vh;
         flex-wrap: wrap;
-        gap: 26px;
+        gap: 6px;
     }
     .equipe {
         margin: 0 10%;
     }
+    
 }
 
+@media only screen and (max-width: 466px) {
+    .grupo{
+        display: grid;
+        grid-template-columns:20vh;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    .equipe {
+        margin: 0 10%;
+    }
+    
+}
 .integrantes {
     margin: 5%;
+    width: 100%;
     border-radius: 2%;
     margin-top: 3%;
     border: 1px solid #fff;
@@ -385,6 +418,7 @@ section b {
     margin-top: 3%;
     height: auto;
     border-top: 1%;
+    margin: 0 2%;
     border-top: solid #fff;
 }
 
@@ -394,12 +428,19 @@ section b {
     justify-items: center;
 }
 .local{
-    width: 300%;
+    width: 290%;
     text-align: center;
 }
 
 .localização iframe {
     border-radius: 10px;
+    width: 700px;
+    height: 300px;
+}
+
+.localização iframe::before {
+    content: "";
+    border-radius:90px;
     width: 700px;
     height: 300px;
 }
