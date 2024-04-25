@@ -364,7 +364,7 @@ section b {
     grid-template-columns: 20vh 20vh 20vh;
     align-items: center;
     flex-direction: column;
-    gap: 14px;
+    gap: 4px;
     justify-content: center;
 }
 @media only screen and (max-width: 767px) {
