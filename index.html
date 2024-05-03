@@ -16,7 +16,6 @@
 
 
 <body>
-<input type="color" class="color-picker" onchange="changeColor(this.value)">
   <script>
     function changeColor(color) {
       document.body.style.backgroundColor = color;
@@ -27,12 +26,6 @@
             var secao = document.getElementById(id);
             secao.scrollIntoView({ behavior: 'smooth' }); // Rolagem suave
         }
-    document.getElementById("quemsomos").addEventListener("mousedown", function() {
-        this.style.backgroundColor = "#423d3d";
-    });
-    document.getElementById("quemsomos").addEventListener("mouseover", function() {
-        this.style.backgroundColor = "";
-    });
 
         
     </script>
